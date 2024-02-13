@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="fire">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="generator" content="jekyll">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="icon" href="/assets/images/logo.svg">
+    <link rel="mask-icon" href="/assets/images/logo.svg" color="#000000">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- tailwindcss style sheet -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+
+    <!-- styling to format embedded code snippits -->
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css">
+
+    <!-- font awesome for glyphicons -->
+    <script src="https://kit.fontawesome.com/b20f6cedee.js" crossorigin="anonymous"></script>
+
+    <style>
+        pre.language-yaml, pre.language-js {
+        border: 2px solid #333;
+      }
+
+        .gradbody {
+          background: linear-gradient(to bottom, #c1c2c2 0%, #d9e8e3 100%);
+        }
+    </style>
+
+    <title>{% if title %}{{title}} &bull; {% endif %}{{site.title}}</title>
+</head>

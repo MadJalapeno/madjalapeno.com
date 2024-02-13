@@ -1,0 +1,53 @@
+{% include head.html %}
+<body>
+    <!--
+
+    url = {{ site.url }}{{ page.url }}
+    time = {{ site.time }}
+    
+    -->
+
+    <div class="md:flex w-full">
+  
+      <!-- column sidebar -->
+      <div class="flex-auto basis-1/3 bg-base-300">
+  
+        <!-- side navigation -->
+        <aside class="w-full flex items-center px-2 pt-60 pb-3 md:min-h-full">
+  
+          <!-- side col 1 -->
+          <div class="flex-auto basis-1/2"></div> 
+  
+          <!-- side col 2 - nav -->
+          <div class="flex-auto basis-1/2 top-0 mx-auto self-start sticky">
+  
+            <div class="p-4 rounded w-full">
+  
+              <div class="p-4 grid justify-end ">
+                <img src="/assets/images/logo.svg" width="50" height="50">
+              </div>
+  
+              <div class="">
+                {% include sidebar.html %}
+              </div>
+  
+          </div>
+        </div>
+      </aside>
+      </div>
+  
+  
+      <!-- column mainbar -->
+      <div class="flex-auto basis-2/3 bg-base pt-60">
+      <main role="main" class="pt-3 w-full sm:w-2/3 md:w-3/4 px-2 space-y-6">
+      
+       {{ content | safe}}
+       
+      </main>
+      </div>
+    
+  </div>
+  
+  
+  </body>
+  </html>

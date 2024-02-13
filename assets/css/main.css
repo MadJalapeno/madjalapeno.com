@@ -1,0 +1,35 @@
+/* src/assets/css/tailwind.css*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    a:link {
+        @apply text-sky-400;
+    }
+
+    a:visited {
+        @apply text-purple-500;
+    }
+
+    a:hover {
+        @apply decoration-sky-500 text-sky-300;
+    }
+
+    h1 {
+        @apply text-2xl;
+      }
+      h2 {
+        @apply text-xl;
+      }
+
+    h1, h2, h3, h4, h5, h6,
+    .prose h1, 
+    .prose h2, 
+    .prose h3, 
+    .prose h4, 
+    .prose h5, 
+    .prose h6 {
+        @apply dark:text-fire-400;
+    }
+}
