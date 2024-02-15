@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+{% for tag in site.tags %}
+ {% assign tagName = tag | first | downcase %} 
+ {% assign postsCount = tag | last | size %} 
+ <li>
+    <a href='/tags/{{ tagName | slugify }}/'>
+        <i class='glyphicon glyphicon-tag'>
+
+        </i>
+        {{ tagName }}
+    </a>({{ postsCount }})</li> {% endfor %}

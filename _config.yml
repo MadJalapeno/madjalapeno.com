@@ -32,6 +32,7 @@ collections:
     output: true
     permalink: /:collection/:year/:month/:day/:title/
 
+
 defaults:
   - scope:
       path: ""
@@ -51,18 +52,25 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package-lock.json
+  - package.json
+  - README.md
+  - tailwind.config.js
 
-# deployment
+keep_files:
+  - /assets/css/main.css
+
+# dev server
 host: 0.0.0.0
 port: 4001

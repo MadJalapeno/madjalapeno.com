@@ -7,6 +7,6 @@ source: home
 title: Home
 ---
 
-{%- for post in site.posts -%}
+{%- for post in site.posts limit:5 -%}
   {% include homeplate.html %}
 {%- endfor -%}
