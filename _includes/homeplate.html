@@ -1,7 +1,7 @@
 <!-- homeplate start --> 
 
 
-<section class="w-full rounded p-2 shadow-md">
+<section class="w-full p-2  shadow-xl rounded-lg ">
     <div class="px-4 flex">
       <div class="flex-1">
         <h1 class="">{{ post.title }}</h1>
@@ -27,11 +27,10 @@
       <div class="px-4 flex">
         <div class="text-xs flex-1 my-2 text-fire-500">mood: {{ post.mood }}</div>
         <div class="text-xs flex flex-1 flex-row justify-end"> 
-          <div class="m-2">tags:</div> 
           {% for eachTag in post.tags %}
           
             <a href="/tags/{{ eachTag }}">
-              <div class="m-1 p-1 px-2 rounded-full bg-primary text-primary-content">{{ eachTag }}</div>
+              <div class="btn btn-xs ml-1">{{ eachTag }}</div>
               </a>
             
           {% endfor %}

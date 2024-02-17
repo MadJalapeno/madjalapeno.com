@@ -1,0 +1,84 @@
+---
+source: posts
+layout: base
+pagination:
+    enabled: true
+
+---
+
+<ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+
+{% for post in site.posts %}
+{% capture thecycle %}{% cycle 'left', 'right' %}{% endcapture %}
+<li>
+
+
+ <div class="timeline-middle">      
+  {% svg_mdi calendar-blank-outline %}
+</div>  
+  
+{% if thecycle == "left" %}
+  <div class="timeline-start md:text-end mb-10 shadow-xl rounded-lg p-4">
+{% else %}
+  <div class="timeline-end mb-10 shadow-xl rounded-lg p-4">
+{% endif %}
+
+    <time class="font-mono">{{ post.date | date_to_string }}</time>
+    <div>      
+      <a href="{{ post.url }}" title="{{ post.title }}">
+      {{ post.title }}
+      </a>
+    </div>
+    {% for eachTag in post.tags %}
+          
+    <a href="/tags/{{ eachTag }}">
+      <div class="btn btn-xs m-1">{{ eachTag }}</div>
+      </a>
+    
+  {% endfor %}
+
+  </div>
+
+
+<hr/>
+</li>
+
+ {% endfor %}
+</ul>
+
+<!-- Pagination links -->
+{% if paginator.total_pages < 3 %}
+
+<div class="join">
+
+  {% if paginator.previous_page %}
+  <div class="btn join-item btn-xs">  
+    <a href="{{ paginator.previous_page_path }}" class="previous">
+      Previous
+    </a>
+  </div>
+  {% else %}
+    <div class="btn join-item btn-xs">Previous</div>
+  {% endif %}
+
+  </div>
+  {% if paginator.next_page %}
+    <div class="btn join-item btn-xs">  
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    </div>
+  {% else %}
+  <div class="btn join-item btn-xs">Next</div>
+  {% endif %}
+</div>
+
+{% else %}
+
+{% for pg in paginator.total_pages %}
+
+  <span class="page_number ">
+    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+
+{% endfor %}
+
+{% endif %}

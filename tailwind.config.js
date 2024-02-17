@@ -2,8 +2,10 @@
 module.exports = {
 
   content: [
+    '_plugins/*.rb',
     '_includes/**/*.html',
     '_layouts/**/*.html',
+    'posts/*.html',
     '*.html',
     '*.md'
     ],
@@ -50,7 +52,7 @@ module.exports = {
         "dim",
         { "fire": {
           // background colors
-          "base-100": "#f6f6f6",
+          "base-100": "#fff",
           "base-200": "#eee",
           "base-300": "#ddd",
           "base-400": "#ccc",

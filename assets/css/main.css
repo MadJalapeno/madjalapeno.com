@@ -34,3 +34,7 @@
         @apply dark:text-fire-400;
     }
 }
+
+@layer utilities {
+
+}

@@ -1,33 +1,55 @@
-<ul class="nav flex flex-col overflow-hidden  text-right ">
+<div class="nav flex flex-col overflow-hidden">
 
 
 <!-- check if on homepage -->  
+<div class="flex flex-row mt-2">  
 {% if page.source == "home" %}
-  <div class="p-1 text-right font-semibold">
-    Home  &nbsp; <i class="fa-regular fa-folder-open"></i>
+  <div class="flex-auto pr-2 text-right font-semibold">
+    Home
+  </div>
+  <div class="flex-none w-8">
+    {% svg_mdi folder-open-outline %}
   </div>
 {% else %}
-<a href="/" class="nav-link link-hover link-primary">  
-  <div class="nav-item p-1">
-  Home  &nbsp;  <i class="fa-regular fa-folder"></i>
+  <div class="flex-auto pr-2 text-right font-semibold">
+    <a href="/" class="nav-link link-hover link-primary">  
+    Home  
+    </a>
   </div>
-</a>
+  <div class="flex-none w-8">
+    {% svg_mdi folder-outline %}
+  </div>
 {% endif %}
+</div>
   
 {% for section in site.data.sections %}
 
+<div class="flex flex-row mt-2">
 <!-- {{ page.source }} {{ section }}-->
   {% if page.source == section in %}
-  <div class="p-1 text-right font-semibold">
-    {{ section | capitalize }} &nbsp; <i class="fa-regular fa-folder-open"></i>
+
+  <div class="flex-auto pr-2 text-right font-semibold">
+    {{ section | capitalize }}
   </div>
+  <div class="flex-none w-8">
+    {% svg_mdi folder-open-outline %}
+  </div>
+
 {% else %}
+
+
+    <div class="flex-auto pr-2 text-right font-semibold">
   <a href="/{{ section | slugify }}" class=" link-hover link-primary">
-    <div class="p-1">
-        {{ section | capitalize}}  &nbsp; <i class="fa-regular fa-folder"></i>
-    </div>
-  </a>
+    {{ section | capitalize}}   
+  </a>    
+  </div>
+  <div class="flex-none w-8">
+    {% svg_mdi folder-outline %}
+  </div>
+
 {% endif %}
+
+</div>
 {% endfor %}
     
   </ul>
@@ -42,4 +64,6 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
   </label>
     </div>
+  </div>
+
   </div>

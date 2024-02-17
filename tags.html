@@ -1,14 +1,28 @@
 ---
-layout: base
+layout: static
+source: tags
 ---
+
+<div>
+<h4>Tag List</h4>
+
+<div class="flex flex-wrap justify-center">
+
 
 {% for tag in site.tags %}
  {% assign tagName = tag | first | downcase %} 
  {% assign postsCount = tag | last | size %} 
- <li>
-    <a href='/tags/{{ tagName | slugify }}/'>
-        <i class='glyphicon glyphicon-tag'>
 
-        </i>
-        {{ tagName }}
-    </a>({{ postsCount }})</li> {% endfor %}
+
+
+    <div class="indicator m-2">
+        <a href='/tags/{{ tagName | slugify }}/'>
+        <span class="indicator-item badge badge-secondary">{{ postsCount }}</span> 
+        <div class="btn btn-sm">{{ tagName }}</div>
+        </a> 
+    </div>
+
+
+    {% endfor %}
+    </div>    
+</div>
