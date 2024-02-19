@@ -33,6 +33,15 @@
     .prose h6 {
         @apply dark:text-fire-400;
     }
+
+    .static ul {
+        @apply p-2;
+        list-style-type: "\x272A";
+        @apply list-inside;
+        
+    }
+
+
 }
 
 @layer utilities {

@@ -25,7 +25,7 @@ module Jekyll
         pre = "<svg class=\"text-primary fill-current h-6 w-6\""
 
         # check if file exists
-        if File.exists?(svg_file)
+        if File.file?(svg_file)
           raw = File.read svg_file
           raw.gsub("xmlns=\"http:\/\/www.w3.org\/2000\/svg\"", "") # strip out xmlns as now inline
           arr = raw.split("<svg")

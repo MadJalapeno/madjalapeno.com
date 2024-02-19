@@ -21,4 +21,8 @@ title: Home
 
 * [Combine AgitCMS and 11ty](https://ginger.wtf/posts/setting-up-agitcms-with-eleventy/)
 
+## Others
 
+### Furniture
+
+* [Beautiful hand made furniture](https://vermontwoodsstudios.com/)
