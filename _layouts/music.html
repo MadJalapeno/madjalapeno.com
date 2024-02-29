@@ -1,0 +1,20 @@
+--- 
+layout: base
+source: playlists
+---
+<!--- music.html -->
+
+<h3>{{ page.title }}</h3>
+
+<p>{{ page.bio }}</p>
+
+{% assign csvfile = page.source %}
+<!-- looking at {{ csvfile }} -->
+
+<table class="table-auto border-collapse text-m w-full mb-4">
+
+  {% csv2table page.source %}
+
+</table>
+
+<!-- music.html end -->

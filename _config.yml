@@ -31,23 +31,52 @@ collections:
   posts:
     output: true
     permalink: /:collection/:year/:month/:day/:title/
-
-
+    
+  music:
+    output: false
+    permalink: /music/:title
+    
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
+  - scope:
+      path: "music/"
+    values: 
+      layout: "music"
 
 # Build settings
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-datapage-generator
 
-paginate: 10
+# pagination v2
+# https://github.com/sverrirs/jekyll-paginate-v2/
+pagination:   
+  enabled: true
+  per_page: 10
+  permalink: "/posts/page:num/"
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
-paginate_path: "/posts/page:num/"
+# datapage_gen
+# https://github.com/avillafiorita/jekyll-datapage_gen?tab=readme-ov-file
+page_gen-dirs: true
+
+page_gen:
+  - data: 'allmusic'
+    template: 'music'
+    dir: 'playlists'
+    name: 'full_name'
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

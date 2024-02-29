@@ -1,6 +1,7 @@
 {
     "scripts": {
         "dev:jekyll": "bundle exec jekyll serve",
+        "debug": "bundle exec jekyll serve --trace",
         "dev:tw": "npx tailwindcss -i ./assets/css/main.css -o ./_site/assets/css/main.css --watch",
         "start": "npm-run-all -p dev:*",
         "build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build  && NODE_ENV=production npx tailwindcss -i ./assets/css/main.css -c tailwind.config.js -o ./_site/assets/css/main.css --minify"

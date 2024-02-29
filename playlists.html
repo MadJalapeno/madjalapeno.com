@@ -1,0 +1,14 @@
+---
+layout: base
+permalink: /playlists/
+source: playlists
+---
+Music Playlists
+
+{% for list in site.data.allmusic %}
+
+<a href="/playlists/{{ list.full_name | slugify }}/">
+{{ list.full_name }}
+</a>
+
+{% endfor %}

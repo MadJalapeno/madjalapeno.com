@@ -6,6 +6,8 @@ title: Home
 
 ### Jekyll
 
+* [Jekyll Plugins](https://www.mslinn.com/jekyll_plugins/)
+
 ### DaisyUI
 
 ### TailwindCSS
