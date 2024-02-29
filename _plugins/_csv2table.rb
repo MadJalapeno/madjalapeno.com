@@ -23,7 +23,7 @@ module Jekyll
 
             if File.file?(datafile) # check file exists
                 # Console Output for Debugging 
-                debug = "🧲       csv2table: ", datafile
+                debug = "        csv2table: ", datafile
                 debug = debug.join
                 puts debug
 
