@@ -76,7 +76,7 @@ page_gen:
     dir: 'playlists'
     name: 'full_name'
 
-
+encoding: utf-8
 
 # Exclude from processing.
 # The following items will not be processed, by default.
