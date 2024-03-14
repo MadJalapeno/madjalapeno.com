@@ -5,8 +5,10 @@ module.exports = {
     '_plugins/*.rb',
     '_includes/**/*.html',
     '_layouts/**/*.html',
-    'posts/*.html',
-    'pages/*.html',
+    '_pages/**/*.*',
+    '_posts/*.*',
+    'posts/*.*',
+    'pages/**/*.*',
     '*.html',
     '*.md'
     ],

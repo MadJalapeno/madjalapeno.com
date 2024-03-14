@@ -35,6 +35,10 @@ collections:
   music:
     output: false
     permalink: /music/:title
+
+  pages:
+    permalink: /pages/:title/
+    output: true
     
 # https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
@@ -54,6 +58,9 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-datapage-generator
+
+# Syntax Highlighter
+highlighter: rouge
 
 # pagination v2
 # https://github.com/sverrirs/jekyll-paginate-v2/

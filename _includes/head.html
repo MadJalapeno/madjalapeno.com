@@ -15,8 +15,12 @@
     <!-- tailwindcss style sheet -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
 
-    <!-- styling to format embedded code snippits -->
-    <slink rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css">
+    <!-- styling to format embedded code snippits
+    <link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" >
+    -->
+
+    <!-- syntax highlighting with Rouge-->
+    <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" />  
 
     <style>
         pre.language-yaml, pre.language-js {
@@ -27,7 +31,6 @@
           background: linear-gradient(to bottom, #c1c2c2 0%, #d9e8e3 100%);
         }
     </style>
+  </head>  
 
-    <title>{% if title %}{{title}} &bull; {% endif %}{{site.title}}</title>
-
-</head>
+<!-- end head includes -->

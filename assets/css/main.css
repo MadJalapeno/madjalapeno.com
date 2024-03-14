@@ -36,12 +36,18 @@
 
     .static ul {
         @apply p-2;
-        list-style-type: "\x272A";
         @apply list-inside;
-        
+    }  
+
+    .static p {
+        @apply mb-4;
     }
 
-
+    .highlight {
+        @apply p-2;
+        @apply rounded-md;
+        @apply text-sm;
+    }
 }
 
 @layer utilities {
