@@ -22,7 +22,7 @@ module Jekyll
         svg_path = File.join Dir.pwd, "assets/svg/"
         svg_file = svg_path, filename
         svg_file = svg_file.join
-        pre = "<svg class=\"text-primary fill-current h-6 w-6\""
+        pre = "<svg class=\"fill-current h-6 w-6\""
 
         # check if file exists
         if File.file?(svg_file)

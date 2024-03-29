@@ -5,17 +5,19 @@
 @tailwind utilities;
 
 @layer base {
-    a:link {
-        @apply text-sky-400;
-    }
-
-    a:visited {
-        @apply text-purple-500;
-    }
-
-    a:hover {
-        @apply decoration-sky-500 text-sky-300;
-    }
+    a, a:link {
+        text-decoration: none;
+        background-position-y: -0%;
+        background-image: linear-gradient( rgba(255,255,255,0) 50%, gold 50%);
+        transition: background 500ms ease;
+        background-size: 2px;
+        background-size: auto 175%;
+      }
+      
+      a:hover {
+        background-position-y: 100%;
+      
+      }
 
     h1 {
         @apply text-2xl;
@@ -31,8 +33,18 @@
     .prose h4, 
     .prose h5, 
     .prose h6 {
-        @apply dark:text-fire-400;
+        @apply text-fire-400;
     }
+
+    svg {
+        @apply text-fire-500;
+    }
+
+
+
+    .sidebar svg {
+        @apply text-fire-500;
+    }    
 
     .static ul {
         @apply p-2;

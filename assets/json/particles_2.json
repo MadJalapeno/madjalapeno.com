@@ -1,0 +1,44 @@
+{
+    "fpsLimit": 60,
+    "options": {
+        "fullScreen": {
+            "enabled": false
+        }
+    },
+    "particles": {
+      "number": {
+        "value": 50
+      },
+      "color": {
+        "value": "ff7e0e"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.5
+      },
+      "links": {
+        "enable": true,
+        "distance": 150,
+        "color": {
+            "value": "#aa3d0e"
+        },
+        "opacity": 0.5
+      },
+      "size": {
+        "value": 3,
+        "random": {
+          "enable": true,
+          "minimumValue": 2
+        }
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.5,
+        "outModes": {
+            "default": "bounce"
+          }
+      }
+    }
+}

@@ -25,6 +25,14 @@ title: Home
 
 ## Others
 
+* [Unminify code](https://unminify.com/)
+
 ### Furniture
 
 * [Beautiful hand made furniture](https://vermontwoodsstudios.com/)
+
+* [One day I will be able to afford these shelves](https://www.vitsoe.com/us/606/gallery)
+
+### Tool Wishlist
+
+

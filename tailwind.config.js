@@ -50,9 +50,11 @@ module.exports = {
   ],
 
   daisyui: {
+    // https://themes.ionevolve.com/
     themes: [
         "light", 
         "dim",
+        "bumblebee",
         { "fire": {
           // background colors
           "base-100": "#fff",

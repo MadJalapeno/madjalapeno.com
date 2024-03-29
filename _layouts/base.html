@@ -1,5 +1,5 @@
 {% include head.html %}
-<body>
+<body onload="themeCheck()">
     <!--
 
     url = {{ site.url }}{{ page.url }}
@@ -7,22 +7,26 @@
     
     -->
 
+
+
     <div class="md:flex w-full">
   
       <!-- column sidebar -->
       <div class="flex-auto basis-1/3 bg-base-300">
-  
+
+
         <!-- side navigation -->
-        <aside class="w-full flex items-center px-2 pt-60 pb-3 md:min-h-full">
-  
+        <aside class="w-full flex items-center px-2 pt-60 pb-3 md:min-h-full particles">
+        <div id="tsparticles"></div>          
+
           <!-- side col 1 -->
           <div class="flex-auto basis-1/2"></div> 
-  
+
           <!-- side col 2 - nav -->
           <div class="flex-auto basis-1/2 top-0 mx-auto self-start sticky">
-  
+
             <div class="p-4 rounded w-full">
-  
+
               <div class="p-4 grid justify-end ">
                 <img src="/assets/images/logo.svg" width="50" height="50">
               </div>
@@ -49,5 +53,11 @@
   </div>
   
   {% include footer.html %}
+
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.34.1/tsparticles.min.js"
+integrity="sha256-D6LXCdCl4meErhc25yXnxIFUtwR96gPo+GtLYv89VZo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/assets/js/particles.js"></script>
+
   </body>
   </html>
