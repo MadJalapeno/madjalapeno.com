@@ -3,12 +3,28 @@ layout: base
 permalink: /playlists/
 source: playlists
 ---
-Music Playlists
+<h2>Music Playlists</h2>
+
+<p>I love listening to music, and use <a href="https://roon.app/en/">Roon</a> with Qobuz and Tidal for listening.</p>
+    
+<p>Here are some of my playlists.</p>
+
+<p>Playlists are exported directly from Roon, and can be imported into <a href="https://soundiiz.com/">Soundiiz</a>. </p>
+<p>Enjoy.</p>
+
+<div class="grid grid-cols-2 gap-4 plain">
 
 {% for list in site.data.allmusic %}
 
-<a href="/playlists/{{ list.full_name | slugify }}/">
-{{ list.full_name }}
+
+<a href="/playlists/{{ list.full_name | slugify }}/" class="block card bg-base-200 shadow-sm border border-base-300 hover:bg-base-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div class="card-body">
+        
+        <h2 class="card-title">{{ list.full_name }}</h2>
+        <p>{{list.tag}}</p>
+
+    </div>
 </a>
 
 {% endfor %}
+</div>

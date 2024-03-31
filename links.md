@@ -3,16 +3,26 @@ layout: static
 source: links
 title: Home
 ---
+# Furniture
 
-### Jekyll
+* [Beautiful hand made furniture](https://vermontwoodsstudios.com/)
+
+* [One day I will be able to afford these shelves](https://www.vitsoe.com/us/606/gallery)
+
+# Web Development
+
+## Jekyll
 
 * [Jekyll Plugins](https://www.mslinn.com/jekyll_plugins/)
 
-### DaisyUI
+## DaisyUI
+* [Components](https://daisyui.com/components/)
 
-### TailwindCSS
+## TailwindCSS
+* [Fundamentals](https://tailwindcss.com/docs/utility-first)
 
-### 11ty
+
+## 11ty
 * [11ty filters](https://www.aleksandrhovhannisyan.com/blog/useful-11ty-filters/) some useful references. I like the switch for manual/auto dark mode at the bottom.
 
 * [Useful Snippets](https://www.hawksworx.com/)
@@ -27,12 +37,7 @@ title: Home
 
 * [Unminify code](https://unminify.com/)
 
-### Furniture
 
-* [Beautiful hand made furniture](https://vermontwoodsstudios.com/)
-
-* [One day I will be able to afford these shelves](https://www.vitsoe.com/us/606/gallery)
-
-### Tool Wishlist
+# Tool Wishlist
 
 

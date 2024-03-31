@@ -29,6 +29,7 @@ pagination:
       {{ post.title }}
       </a>
     </div>
+    <div class="plain">
     {% for eachTag in post.tags %}
           
     <a href="/tags/{{ eachTag }}">
@@ -36,7 +37,7 @@ pagination:
       </a>
     
   {% endfor %}
-
+    </div>
   </div>
 
 

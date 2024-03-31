@@ -1,9 +1,64 @@
 - full_name: All 2023
-  source: all2023
+  source: 2023
   title: General Music from 2023
-  bio: long bio goes here
+  tag: Music I starred in 2023
 
 - full_name: EDM 2023
-  source: edm2023
+  source: 2023 - EDM
   title: EDM Music from 2023
-  bio: 
+  tag: EDM music starred in 2023 
+
+- full_name: All 2022
+  source: 2022
+  title: General Music from 2022
+  tag: Music I starred in 2022
+
+- full_name: EDM 2022
+  source: 2022 - EDM
+  title: EDM Music from 2022
+  tag: EDM music starred in 2022
+
+- full_name: All 2021
+  source: 2021
+  title: Music I starred in 2021
+  tag: All music I starred during 2021
+
+- full_name: All 2020
+  source: 2020
+  title: Music starred in 2020
+  tag: First year with Roon, and these are the songs I starred.
+
+- full_name: Harman Art of Listening
+  source: Harman Art of Listening Playlist [S]
+  title: Harman Art of Listening
+  bio: <a href="https://artoflistening.harman.com/">More Info</a>
+  tag: What is the difference between hearing and listening?
+
+- full_name: LX Demo
+  source: LX Demo
+  title: Demo Files for LX521
+  tag: Music that shows the full potential of my speakers.
+  bio: I have a gorgeous sound system. These are songs to challenge it with either deep rumbling bass, great imaging or crystal clear voices.
+
+- full_name: Gorgeous and Timeless
+  source: gorgeous and timeless
+  title: Goregeous and Timeless songs
+  bio:
+
+- full_name: Passion
+  source: Passion
+  title: Passion ♥️
+  tag: Sundays at Studio Valbonne
+  bio: Growing up with the best music
+
+- full_name: School Disco
+  source: school disco
+  title: Schoool Disco
+
+- full_name: Radio Paradise Faves
+  source: Radio Paradise Faves
+  title: Favorites from Radio Paradise
+
+- full_name: GetDaFlockOuttaHere
+  source: GetDaFlockOuttaHere
+  title: GetDaFlockOuttaHere

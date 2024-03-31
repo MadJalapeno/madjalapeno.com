@@ -29,7 +29,8 @@ module Jekyll
 
                 output = []
 
-                csv_data = CSV.read(datafile, :headers => true)
+                csv_data = CSV.read(datafile, :headers => true, :col_sep => ";")
+
 
                 data = Hash.new         
                 data['keys'] = csv_data.headers

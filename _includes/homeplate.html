@@ -1,10 +1,17 @@
 <!-- homeplate start --> 
 
-
 <section class="w-full p-2  shadow-xl rounded-lg ">
     <div class="px-4 flex">
-      <div class="flex-1">
+      <div class="flex-1 plain">
+
+{% if page.source == "home" %}
+        <a href="{{ post.url }}">
+        <h1 class="bg-base-100 hover:bg-base-300 rounded-sm">{{ post.title }}</h1>
+        </a>
+{% else %}
         <h1 class="">{{ post.title }}</h1>
+{% endif %}
+
       </div>
       <div class="flex-1">
         <div class="text-sm text-end text-fire-500">{{ post.date | date_to_string: "ordinal", "US" }}</div>    
@@ -26,7 +33,7 @@
   
       <div class="px-4 flex">
         <div class="text-xs flex-1 my-2 text-fire-500">mood: {{ post.mood }}</div>
-        <div class="text-xs flex flex-1 flex-row justify-end"> 
+        <div class="text-xs flex flex-1 flex-row justify-end plain"> 
           {% for eachTag in post.tags %}
           
             <a href="/tags/{{ eachTag }}">
