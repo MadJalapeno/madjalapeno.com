@@ -5,30 +5,32 @@
 @tailwind utilities;
 
 @layer base {
-    a, a:link {
-        text-decoration: none;
-        background-position-y: -0%;
-        background-image: linear-gradient( rgba(255,255,255,0) 50%, gold 50%);
-        transition: background 500ms ease;
-        background-size: 2px;
-        background-size: auto 175%;
-      }
 
-      a:hover {
-        background-position-y: 100%; 
-        cursor: pointer;
-      }
+  a, a:link {
+      text-decoration: none;
+      background-position-y: -0%;
+      background-image: linear-gradient( rgba(255,255,255,0) 50%, gold 50%);
+      transition: background 500ms ease;
+      background-size: 2px;
+      background-size: auto 175%;
+    }
 
-      .plain a { /* used when we don't want yellow links */
-        background-image: none;
-      }      
+    a:hover {
+      background-position-y: 100%; 
+      cursor: pointer;
+    }
 
-    h1 {
-        @apply text-2xl;
-      }
-      h2 {
-        @apply text-xl;
-      }
+    .plain a { /* used when we don't want yellow links */
+      background-image: none;
+    }      
+
+  h1 {
+      @apply text-2xl;
+    }
+  
+  h2 {
+      @apply text-xl;
+    }
 /*
     h1, h2, h3, h4, h5, h6,
     .prose h1, 
@@ -44,7 +46,27 @@
         @apply text-fire-500;
     }
 
+    body {
+      @apply font-light;
+      @apply font-sans;
+      @apply text-base;
+      @apply tracking-normal;
+      @apply leading-7;
+    }
 
+    ul {
+      @apply list-disc;
+    }
+
+    table {
+      @apply table table-xs;
+      @apply border-collapse border-slate-500;
+    }
+
+    td {
+      @apply py-2;
+      @apply px-2;
+    }
 
     .sidebar svg {
         @apply text-fire-500;

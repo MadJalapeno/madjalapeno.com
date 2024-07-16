@@ -27,7 +27,7 @@ To use, change the 4 lines indicated to match relevent configuration.
 
 {% highlight yaml linenos%}
 
-subsitutions:
+substitutions:
   name: bare-minimum                # change me
   friendly_name: _bare_minimum      # change me
 
