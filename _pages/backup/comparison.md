@@ -64,7 +64,7 @@ provider = Storj
 access_key_id = S3_ACCESS_KEY
 secret_access_key = S3_SECRET_ACCESS_KEY
 endpoint = gateway.storjshare.io
-chunk_size = 64Mi
+chunk_size = 64M
 disable_checksum: true
 ```
 
@@ -294,14 +294,31 @@ It's a shame, as I've used Cloudberry for many years at work.
 
 ## Final Results
 
-| Program | Bucket Size | Time | Ease of use | Recovery |
+#### Summary
+
+| Program | Bucket Size | Time  | Ease of use | Recovery |
 | --- | --- | --- | --- | --- |
-| Restic | 1.63 GB | 43s | command line is pretty simple | restored files using Backrest on Windows with no problem | 
+| Restic | 1.63 GB | 43s * | command line is pretty simple | restored files using Backrest on Windows with no problem | 
 | Borg| 1.69 GB | 49s (local) | command line is pretty simple | No windows version. Permission issues on MacOS. |
 | Duplicacy | 1.5 GB | 7m:40s | GUI is clear | Restored individual files easily on Windows |
 | Duplicati | 1.5 GB | 3m:13s | Easy to use GUI | 
-| Kopia | 1.9 GB | 67s | GUI is a little confusing at first, but easy to use once you get the hang of it | Very easy |
+| Kopia | 1.9 GB | 67s * | GUI is a little confusing at first, but easy to use once you get the hang of it | Very easy |
 | Cloudberry | - | - | Could not use a container is set up to not allow copy/paste of keys | |
 
+Notes: * I don't know if this was timing was accurate as rclone may cache data?
 
 
+#### Storj buckets
+
+| Bucket | Files | Storage |
+| --- | --- | --- |
+| duplicacy-test | 314 | 1.57GB |
+| duplicati-test | 65 | 1.63GB |
+| kopia-test | 89 | 1.63GB |
+| restic-test | 102 | 1.63GB |
+
+## Conclusion
+
+If it wasn't for the reports of database problems with Duplicati I would probably go with that as it's so easy to use.
+
+I'm having a hard time deciding between restic and kopia, so will [next](/pages/kopia_restic/) try seeing how good the reporting and notifications work.

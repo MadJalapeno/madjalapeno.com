@@ -19,7 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-seo-tag"
   gem "jekyll-datapage-generator"
-  gem "rouge"
+  gem "rouge" # used for styling codeblocks
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
